@@ -1,2 +1,3 @@
-# ZooProj
-This was a class project testing how to segue through different screens when tapping on a specific location on the screen. 
+# GrossPay
+
+This is a very simple financing tool where you can plug in your gross pay, and it'll use the 50/30/20 rule to allocate your gross income 
