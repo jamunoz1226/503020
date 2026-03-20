@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_0_30_20" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="top" translatesAutoresizingMaskIntoConstraints="NO" id="Pay-nD-5id" userLabel="50/30/20">
+                                <rect key="frame" x="20" y="114" width="390" height="155"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50/30/20" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcz-IO-hCV">
+                                        <rect key="frame" x="68" y="44.666666666666664" width="254" height="65.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="50"/>
+                                        <color key="textColor" red="0.93333333330000001" green="0.95686274510000002" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.043137254899999998" green="0.1450980392" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Tcz-IO-hCV" firstAttribute="centerX" secondItem="Pay-nD-5id" secondAttribute="centerX" id="GmA-Mx-8Ea"/>
+                                    <constraint firstAttribute="height" constant="155" id="ZIg-FO-iSI"/>
+                                    <constraint firstItem="Tcz-IO-hCV" firstAttribute="centerY" secondItem="Pay-nD-5id" secondAttribute="centerY" id="gHS-Ah-1OK"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacingType="standard" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eLH-Cx-pJ2" userLabel="Net View">
+                                <rect key="frame" x="20" y="289" width="390" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Net Pay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqd-1Y-9LV">
+                                        <rect key="frame" x="134.33333333333334" y="0.0" width="121.33333333333334" height="23.666666666666668"/>
+                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="18"/>
+                                        <color key="textColor" red="0.043137254899999998" green="0.1450980392" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Dollar Amount" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="k3L-KV-Zbf" userLabel="NetPay">
+                                        <rect key="frame" x="116" y="57.333333333333314" width="158" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zig-pM-1wg">
+                                        <rect key="frame" x="147.66666666666666" y="115.66666666666667" width="95" height="34.333333333333329"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Calculate" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.043137254899999998" green="0.1450980392" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" red="0.93333333330000001" green="0.95686274510000002" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="calculateTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ckk-6V-K3g"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.95686274510000002" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="jCy-Jf-l1I"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Yin-Rl-dip" userLabel="Output View">
+                                <rect key="frame" x="20" y="459" width="390" height="345"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JTN-Gj-dn3" userLabel="Bills View">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="115"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="% to Bills" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBV-NC-jKS">
+                                                <rect key="frame" x="0.0" y="45.666666666666686" width="195" height="23.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="18"/>
+                                                <color key="textColor" red="0.043137254901960784" green="0.14509803921568626" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdK-TK-3sn" userLabel="Bills Label">
+                                                <rect key="frame" x="195" y="0.0" width="195" height="115"/>
+                                                <string key="text">Allocate 50% of your income to essential expenses like rent, utilities, and groceries, ensuring stability and taking care of your basic living requirements.</string>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <color key="textColor" red="0.93333333330000001" green="0.95686274510000002" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="115" id="0Ze-Y6-TSF"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ouP-zc-9qm" userLabel="PS View">
+                                        <rect key="frame" x="0.0" y="115" width="390" height="115"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="% to Personal Spending" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pn-1E-vMF">
+                                                <rect key="frame" x="0.0" y="34" width="195" height="47.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="18"/>
+                                                <color key="textColor" red="0.043137254899999998" green="0.1450980392" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAm-ij-9DZ" userLabel="PS Label">
+                                                <rect key="frame" x="195" y="2.3333333333333712" width="195" height="110.33333333333333"/>
+                                                <string key="text">Dedicate 30% to personal desires like dining out, hobbies, and entertainment, allowing enjoyment of life while maintaining financial balance.</string>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <color key="textColor" red="0.93333333330000001" green="0.95686274510000002" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="115" id="Vrh-Is-mur"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3Ra-l7-c7g" userLabel="SD View">
+                                        <rect key="frame" x="0.0" y="230" width="390" height="115"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cL-L3-6xd">
+                                                <rect key="frame" x="0.0" y="34" width="195" height="47.333333333333343"/>
+                                                <string key="text">% to 
+Savings / Debt</string>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="18"/>
+                                                <color key="textColor" red="0.043137254899999998" green="0.1450980392" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reserve 20% for savings, investments, and debt repayment to build financial security and future wealth." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dyv-xN-cqy" userLabel="SD Label">
+                                                <rect key="frame" x="195" y="20.666666666666629" width="195" height="73.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <color key="textColor" red="0.93333333330000001" green="0.95686274510000002" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="115" id="S0W-qI-whP"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.55294117649999996" green="0.66274509800000003" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Yin-Rl-dip" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1hL-11-4Li"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eLH-Cx-pJ2" secondAttribute="trailing" constant="20" id="Bjv-Ou-q15"/>
+                            <constraint firstItem="Pay-nD-5id" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="OhN-Ba-Voe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pay-nD-5id" secondAttribute="trailing" constant="20" id="THn-Ux-Qbu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yin-Rl-dip" secondAttribute="trailing" constant="20" id="VCp-JX-5XC"/>
+                            <constraint firstItem="Yin-Rl-dip" firstAttribute="top" secondItem="eLH-Cx-pJ2" secondAttribute="bottom" constant="20" id="ina-gA-Eii"/>
+                            <constraint firstItem="Pay-nD-5id" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mRc-VX-IRR"/>
+                            <constraint firstItem="eLH-Cx-pJ2" firstAttribute="top" secondItem="Pay-nD-5id" secondAttribute="bottom" constant="20" id="oYg-VK-WTt"/>
+                            <constraint firstItem="eLH-Cx-pJ2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rbu-2W-qJL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="netCorners" destination="eLH-Cx-pJ2" id="SID-eA-fTZ"/>
+                        <outlet property="netPay" destination="k3L-KV-Zbf" id="KLk-ud-T7E"/>
+                        <outlet property="outputBills" destination="cdK-TK-3sn" id="mAb-Jf-oBn"/>
+                        <outlet property="outputCorners" destination="Yin-Rl-dip" id="LCK-dl-YXX"/>
+                        <outlet property="outputPersonal" destination="yAm-ij-9DZ" id="EZ4-sy-AvZ"/>
+                        <outlet property="outputSavDeb" destination="Dyv-xN-cqy" id="ydE-yn-ufl"/>
+                        <outlet property="roundCorners" destination="Pay-nD-5id" id="Bul-UL-car"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="347" y="-183"/>
+        </scene>
+    </scenes>
+</document>
